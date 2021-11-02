@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>100 Days of Code by Aji</title>
+	<style>
+		body{background-color: silver;}
+	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<p><a href="#C1">Menuju teks berikutnya</a></p>
+	<p><a href="index.html#C2">Menuju teks berikutnya</a></p>
+	<p><b>Tulisan ini tebal</b></p> <!-- b = membuat tulisan jadi tebal (bold) -->
+	<p><strong>Tulisan ini penting sekali</strong></p> <!-- sama aja dengan b, hanya saja perbedaannya elemen strong dapat diindeks ke mesin pencarian -->
+	<p><i>Tulisan ini miring</i></p> <!-- i = membuat tulisan jadi miring -->
+	<p><em>Tulisan ini juga miring</em></p> <!-- sama aja dengan i, hanya saja perbedaannya elemen em dapat diindeks ke mesin pencarian -->
+	<p><mark>Tulisan ini distabilo</mark></p> <!-- mark = membuat tulisan jadi 'distabilo' -->
+	<p><small>Tulisan ini jadi kecil</small></p> <!-- small = membuat tulisan jadi kecil -->
+	<p>Tulisan ini <del>dicoret</del></p> <!-- del = menambah garis di tengah tulisan -->
+	<p>Tulisan ini <ins>digarisbawahi</ins></p> <!-- ins = menambah garis di bawah tulisan -->
+	<p id="C2">Tulisan ini <sub>kecil ke bawah</sub></p> <!-- sub = membuat tulisan jadi kecil menjorok ke bawah -->
+	<p>Tulisan ini <sup>kecil ke atas</sup></p> <!-- sub = membuat tulisan jadi kecil menjorok ke atas -->
+	<blockquote cite="http://www.worldwildlife.org/who/index.html">For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</blockquote> <!-- blockquote = membuat quote yang berasal dari sumber lain, ditambahkan dengan atribut cite -->
+	<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p> <!-- q = membuat quote singkat -->
+	<p>aespa berhasil mendapatkan <abbr title="Perfect All Kill">PAK</abbr> melalui lagu Savage</p> <!-- abbr = elemen untuk menulis singkatan, jangan lupa gunakan atribut title untuk menulis kepanjangannya -->
+	<p>
+		<address> <!-- address = elemen untuk menulis kontak, bisa dalam bentuk alamat jalan, no. hp, sosmed, dll. -->
+			Jl. Kesuma Bangsa<br>
+			No. 82<br>
+			Samarinda
+		</address>
+	</p>
+	<p id="C1"><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p> <!-- cite = elemen untuk menulis judul karya -->
+	<p><bdo dir="rtl">Tulisan ini dibaca dari kanan ke kiri</bdo></p> <!-- bdo = bi-directional override (mengganti arah teks, harus ditambah atribut dir = ltr (kiri ke kanan)/rtl (kanan ke kiri)) -->
+	<p style="border: 2px solid Tomato;">Tulisan ini di border warna merah</p>
+	<p style="color:rgb(200, 100, 100);">Tulisan RGB</p>
+	<p style="color:#712472;">Tulisan HEX</p>
+	<p style="color:hsl(7, 100%, 40%);">Tulisan HSL</p> <!-- hsl = hue (0 = merah, 120 = hijau, 240 = biru), saturation (0% = abu-abu, 50% = abu-abu tapi masih ada warnanya, 100% = warna), lightning (0% = hitam/gelap, 50% = separuh terang, 100% = terang/putih) -->
+	<p style="color:rgba(200, 100, 100, 0.5);">Tulisan RGBA</p> <!-- A = alpha (opacity) -->
+	<p style="color:hsla(7, 100%, 40%, 0.5);">Tulisan HSLA</p>
+	<p><a href="https://www.w3schools.com" target="_self">Ini link dari W3Schools</a></p> <!-- self = menampilkan tautan di jendela yang sama dengan dokumen itu dibuat -->
+	<p><a href="https://www.w3schools.com" target="_blank">Ini link dari W3Schools</a></p> <!-- self = menampilkan tautan di jendela yang baru -->
+	<p><a href="https://www.w3schools.com" target="_parent">Ini link dari W3Schools</a></p>
+	<p><a href="https://www.w3schools.com" target="_top">Ini link dari W3Schools</a></p>
+	<p><a href="mailto:ajisaid.wahyudi1@gmail.com">Ini link ke Email</a></p>
+	<button onclick="document.location='default.asp'">HTML Tutorial</button>
+</body>
+</html>
+
+<!-- ini komentar -->
+<!-- penggunaan CSS:
+- inline: menggunakan atribut style di dalam elemen
+- internal: menggunakan elemen style di dalam head
+- eksternal: menggunakan elemen link ke file CSS -->
+<!-- link yang belum dikunjungi berwarna biru, yang sudah dikunjungi berwarna ungu, yang aktif berwarna merah dan semuanya digarisbawahi -->
+<!-- membuat bookmark:
+1. menambah atribut id dan value di elemen yang dituju
+2. tambah link dengan menggunakan <a href="#value">Value yang dituju</a> -->
