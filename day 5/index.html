@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> <!-- mendefinisikan jenis karakter yang digunakan -->
+	<meta name="keywords" content="HTML, CSS, JS"> <!-- mendefinisikan keyword di search engine -->
+	<meta name="description" content="100 Days of Code"> <!-- mendefinisikan deskripsi -->
+	<meta name="author" content="Aji Said Wahyudi Hidayat" /> <!-- mendefinisikan author -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- mendefinisikan viewport agar terliht bagus di semua perangkat, width=device-width = lebarnya mengikuti lebar layar perangkat, initial-scale=1 = zoom level awal pada saat di load di browser -->
+	<title>100 Days of Code</title>
+	<!-- <base href="https://www.w3schools.com/"> base = mendefinisikan alamat utama -->
+</head>
+<body>
+	<h1>Klik Tombol ini</h1>
+	<button type="button">Klik</button>
+	<p id="demo"></p>
+	<img src="foto1.jpg" id="gambar" width="100" style="max-width: 100%;">
+	<p>
+		<button type="button" onclick="foto(0)">Foto 1</button>
+		<button type="button" onclick="foto(1)">Foto 2</button>
+	</p>
+	<!-- <p><a href="tags/tag_base.asp">Klik</a></p> -->
+	<code>
+		x=5;
+		y=6;
+		z=x+y;
+	</code>
+	<kbd>Ctrl+S</kbd> <!-- samp = keyboard input -->
+	<p>Punya Aji <samp>404</samp></p> <!-- samp = output komputer -->
+	<var>x</var> <!-- var = buat variabel -->
+	<hr>
+	<img src="foto/foto1.jpg" alt="Crush & Joy" width="100">
+	<img src="../foto2.jpg" alt="Crush & Joy" width="100">
+	<script type="text/javascript">
+		document.getElementById('demo').innerHTML = "Halo";
+		document.getElementById('demo').style.color = "red";
+	</script>
+	<script type="text/javascript">
+		function foto(pilihan){
+			var pic;
+			if (pilihan == 0) {
+				pic = "foto1.jpg"
+			} else {
+				pic = "foto2.jpg"
+			}
+			document.getElementById('gambar').src = pic;
+		}
+	</script>
+	<!-- <nonscript>404</nonscript> -->
+</body>
+</html>
+
+<!-- Elemen semantik adalah elemen-elemen yang menyatakan makna atau tujuan dari elemen itu sendiri, elemen semantik antara lain:
+<article> menampilkan isi berita, artikel, dll.
+<aside> konten ditaruh di samping
+<details>
+<figcaption> menambah caption di elemen figure
+<figure> menampilkan gambar, diagram, dll.
+<footer> bagian bawah website
+<header> bagian atas website
+<main> konten utama
+<mark> tulisan yang ditandai
+<nav> menampilkan daftar menu
+<section> menampilkan section dokumen seperti berita, kontak, chapter, dll.
+<summary> heading dari elemen details
+<time> -->
