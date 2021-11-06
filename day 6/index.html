@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>100 Days of Code</title>
+</head>
+<body>
+	<p> <!-- simbol huruf -->
+		&nbsp;
+		&lt;
+		&gt;
+		&amp;
+		&quot;
+		&apos;
+		&cent;
+		&pound;
+		&yen;
+		&euro;
+		&copy;
+		&reg;
+	</p>
+	<p> <!-- simbol matematika -->
+		&forall;
+		&part;
+		&exist;
+		&empty;
+		&nabla;
+		&isin;
+		&notin;
+		&ni;
+		&prod;
+		&sum;
+	</p>
+	<p> <!-- huruf yunani -->
+		&Alpha;
+		&Beta;
+		&Gamma;
+		&Delta;
+		&Epsilon;
+		&Zeta;
+	</p>
+	<p>&#65; &#66; &#128514; &#202;</p>
+	<!-- <form action="/action_page.php" autocomplete="on">
+		<label for="nama">Nama</label>
+		<input type="text" id="nama" name="">
+		<input type="submit" name="">
+	</form> -->
+	<form action="/action_page.php" novalidate>
+		<label for="nama">Nama</label>
+		<input type="text" id="nama" name="">
+		<input type="submit" name="">
+	</form>
+	<form>
+		<input type="radio" id="html" name="frontend" value="HTML">
+		<label for="html">HTML</label>
+		<input type="radio" id="css" name="frontend" value="CSS">
+		<label for="css">CSS</label>
+	</form>
+	<form action="#" method="get"> <!-- method get kalo dikirim sebagai URL variables, method post kalo HTTP post transaction -->
+		<input type="checkbox" id="html" name="">
+		<label for="html">Lagi Belajar HTML</label>
+		<input type="submit" name="">
+		<input type="button" name="">
+	</form>
+	<form>
+		<select id="nama" name="nama" size="2" multiple>
+			<option value="Alfi" selected>Alfi</option>
+			<option>Arif</option>
+			<option>Rizky</option>
+		</select>
+		<textarea cols="30" rows="10"></textarea>
+	</form>
+	<form>
+		<fieldset>
+			<legend>Form Nama</legend>
+			<label for="nama">Nama</label>
+			<input type="text" id="nama" name="">
+		</fieldset>
+	</form>
+	<form>
+		<input type="text" name="browser" list="browsers">
+		<datalist id="browsers">
+			<option>Firefox</option>
+			<option>Chrome</option>
+		</datalist>
+	</form>
+	<form oninput="x.value=parseInt(angka_a.value)+parseInt(angka_b.value)">
+		<input type="text" name="angka_a" id="angka_a">
+		<input type="text" name="angka_b" id="angka_b">
+		<output name="x" for="angka_a angka_b"></output>
+	</form>
+	<canvas id="myCanvas" width="200" height="100"></canvas> <!-- untuk menggambar, gunakan js -->
+	<svg width="100" height="100">
+		<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+	</svg>
+	<video width="360" height="240" autoplay muted>
+		<source src="" type="video/mp4">
+	</video>
+	<audio>
+		<source src="" type="audio/mpeg">
+	</audio>
+	<embed src=""></embed>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/bD6aoANS_og" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
+
+<!-- <input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+
+atribut
+value = menampilkan data yang diinput
+readonly = data tidak dapat diedit
+disabled = input tidak dapat digunakan
+size = ukuran form dalam karakter
+maxlength = angka maksimal data yang diinput
+min/max = minimal/maksimal value yang diminta
+multiple = input bisa lebih dari satu
+pattern = membuat pola dalam input data
+placeholder = petunjuk dalam penginputan
+required = harus diisi
+step = interval pada setiap input
+autofocus = input field langsung terfokus otomatis
+height & width = menentukan ukuran gambar
+list = menampilkan daftar, hanya ketika ada elemen datalist
+autocomplete = pada saat penginputan, akan muncul sendiri pilihannya
+
+formaction = sama seperti action, tapi hanya untuk atribut submit & image
+formenctype = gimana agar form-data bisa di encode
+formmethod = method pada saat kirim data
+formtarget
+formnovalidate -->
