@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>100 Days of Code</title>
+	<script type="text/javascript">
+		function clickCounter() {
+			if (typeof(Storage) !== "undefined") {
+				if (sessionStorage.clickcount) {
+					sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+				} else {
+					sessionStorage.clickcount = 1;
+				}
+				document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";
+			} else {
+				document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+			}
+		}
+	</script>
+</head>
+<body>
+	<p>
+		<button onclick="clickCounter()" type="button">Klik</button>
+	</p>
+	<div id="result"></div>
+</body>
+</html>
+
+<!-- The sessionStorage object is equal to the localStorage object, except that it stores the data for only one session. The data is deleted when the user closes the specific browser tab. -->
