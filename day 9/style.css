@@ -1,0 +1,142 @@
+/*Margins are used to create space around elements, outside of any defined borders.
+Padding is used to create space around an element's content, inside of any defined borders.
+Boxmodel = content + padding + border + margin*/
+p.contoh1{
+	width: 300px;
+	border: 1px solid blue;
+	/*margin: 100px 80px 40px 60px;*/
+	margin: auto;
+	background-color: yellow;
+	color: green;
+	/*text-align: center;*/ /*left, center, right, justify*/
+	direction: rtl;
+	unicode-bidi: bidi-override;
+}
+
+div{
+	border: 1px solid blue;
+	margin-left: 100px;
+}
+
+p.contoh2{
+	margin-left: inherit;
+}
+
+p.contoh3{
+	border: 1px solid blue;
+	margin: 0 0 0 20px;
+	text-transform: lowercase;
+	text-indent: 50px;
+	letter-spacing: 5px;
+}
+
+p.contoh4{
+	border: 1px solid blue;
+	width: 200px;
+	padding: 25px;
+	box-sizing: border-box; /*agar width tidak ikut bertambah jika ditambah padding*/
+	text-transform: uppercase;
+}
+
+p.contoh5{
+	border: 1px solid blue;
+	width: 200px;
+	height: 50px;
+	text-transform: capitalize;
+}
+
+p.contoh6{
+	border: 1px solid blue;
+	max-width: 500px;
+	height: 100px;
+}
+
+p.dotted{
+	outline-style: dotted;
+	outline-width: thin;
+}
+
+p.dashed{
+	outline-style: dashed;
+	outline-width: medium;
+}
+
+p.solid{
+	outline-style: solid;
+	outline-width: thick;
+}
+
+p.double{
+	outline: 2px double red;
+}
+
+p.groove{
+	outline-style: groove;
+	outline-color: blue;
+}
+
+p.ridge{
+	background-color: yellow;
+	outline-style: ridge;
+	outline-offset: 10px;
+}
+
+p.inset{
+	outline-style: inset;
+}
+
+p.outset{
+	outline-style: outset;
+}
+
+img.va1{
+	vertical-align: baseline;
+}
+
+img.va2{
+	vertical-align: text-top;
+}
+
+img.va3{
+	vertical-align: text-bottom;
+}
+
+img.va4{
+	vertical-align: sub;
+}
+
+img.va5{
+	vertical-align: super;
+}
+
+a.td1{
+	text-decoration: none;
+}
+
+a.td2{
+	text-decoration: overline;
+}
+
+a.td3{
+	text-decoration: line-through;
+}
+
+a.td4{
+	text-decoration: underline;
+}
+
+p.small{
+	line-height: 0.7;
+	word-spacing: 10px;
+}
+
+p.big{
+	line-height: 1.8;
+	word-spacing: -2px;
+}
+
+p.wrap{
+	white-space: nowrap;
+	color: white;
+	text-shadow: 2px 2px 5px red, 2px 2px 5px blue; /*horizontal, vertical, blur*/
+}
