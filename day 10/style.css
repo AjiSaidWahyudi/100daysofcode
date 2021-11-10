@@ -1,0 +1,83 @@
+p.p1{
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic; /*normal/italic/oblique*/
+	font-size: /*30px*/ 2em; /*1em = 16px*/
+}
+
+p.p2{
+	font-family: Arial, Verdana, sans-serif; /*contoh penggunaan fallback font (font cadangan jika font pertama tidak tampil)*/
+	font-weight: bold; /*normal/bold*/
+	font-size: 100%;
+}
+
+p.p3{
+	font-family: "Lucida Console", monospace;
+	font-variant: small-caps; /*normal/small-caps (huruf kecil jadi huruf besar, tapi tulisannya jadi kecil)*/
+}
+
+p.p4{
+	font-family: "Lucida Handwriting", cursive;
+}
+
+p.p5{
+	font-family: "Copperplate", fantasy;
+}
+
+p.p6 {
+  font-family: "Sofia", sans-serif;
+}
+
+p.p7 {
+  font-family: "Trirong", serif;
+}
+
+p.p8 {
+  font-family: "Audiowide", sans-serif;
+}
+
+p.p9{
+	font: italic small-caps bold 12px/30px Verdana, sans-serif;
+}
+
+a{
+	text-decoration: none; /*biasanya untuk menghilangkan underline*/
+	background-color: grey;
+}
+
+a:link{
+	color: red;
+}
+
+a:visited{
+	color: orange;
+}
+
+a:hover{
+	color: green;
+}
+
+a:active{
+	color: blue;
+}
+
+/*a:hover MUST come after a:link and a:visited
+a:active MUST come after a:hover*/
+
+/*urutan penulisan font jika penulisannya jadi satu
+font-style
+font-variant
+font-weight
+font-size/line-height
+font-family*/
+
+/*font yang cocok untuk websafe:
+Arial (sans-serif)
+Verdana (sans-serif)
+Helvetica (sans-serif)
+Tahoma (sans-serif)
+Trebuchet MS (sans-serif)
+Times New Roman (serif)
+Georgia (serif)
+Garamond (serif)
+Courier New (monospace)
+Brush Script MT (cursive)*/
