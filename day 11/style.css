@@ -1,0 +1,88 @@
+ul{
+	background: #ff9999;
+	padding: 20px;
+}
+
+ul.a{
+	list-style-type: circle;
+	list-style-position: outside;
+}
+
+ul.b{
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+ul.c{
+	list-style-image: url(sqpurple.gif);
+}
+
+ul.d{
+	list-style-type: none; /*jika none, jangan lupa margin & padding nya 0*/
+	margin: 0; /*margin auto = ke tengah*/
+	padding: 0;
+}
+
+ul li{
+	background: #cce5ff;
+	margin: 5px;
+	display: inline;
+}
+
+ol{
+	background: #3399ff;
+	padding: 20px;
+}
+
+ol.a{
+	list-style-type: upper-roman;
+}
+
+ol.b{
+	list-style-type: lower-alpha;
+}
+
+ol.c{
+	list-style: upper-roman inside;
+}
+
+ol li{
+	background: #cce5ff;
+	margin: 5px;
+}
+
+table, th, td{
+	border: 1px solid black;
+	width: 50%;
+	border-collapse: collapse;
+}
+
+th{
+	height: 70px;
+	text-align: left;
+	padding: 10px;
+}
+
+td{
+	vertical-align: bottom;
+}
+
+tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+tr:hover{
+	background-color: yellow;
+}
+
+span{
+	display: block;
+}
+
+p.hide{
+	display: none;
+}
+
+p.visibility{
+	visibility: hidden;
+}
