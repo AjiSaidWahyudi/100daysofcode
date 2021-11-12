@@ -1,0 +1,106 @@
+*{
+	box-sizing: border-box;
+}
+
+div.p1, div.p2{
+	position: static; /*default*/
+	border: 1px solid green;
+}
+
+div.p3, div.p4{
+	position: relative; /*elemen bisa disetting top, left, right, bottom nya*/
+	border: 1px solid green;
+	left: 30px;
+}
+
+div.p5{
+	position: fixed; /*elemen tidak berpindah meskipun di scroll*/
+	border: 1px solid green;
+	top: 10px;
+}
+
+div.p6{
+	position: absolute; /*elemen berpindah meskipun di scroll*/
+	border: 1px solid green;
+	top: 40px;
+}
+
+div.p7{
+	position: sticky; /*elemen mentok di posisi tertentu pada saat di scroll*/
+	border: 1px solid green;
+	top: 0;
+}
+
+/*img.p8{
+	position: absolute;
+	z-index: -1; z-index = mengatur tumpukan elemen, makin besar, makin ke depan, z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display: flex elements).
+}*/ /*If two positioned elements overlap each other without a z-index specified, the element defined last in the HTML code will be shown on top*/
+
+div.p9{
+	width: 200px;
+	height: 80px;
+	/*overflow: visible; default*/
+	/*overflow: hidden; sebagian konten terpotong*/
+	/*overflow: scroll; menampilkan scrollbar*/
+	overflow: auto; /*hanya menampilkan scrollbar jika kontennya banyak*/
+	/*tambahan, overflow-x (hanya untuk kanan-kiri) & overflow-y (hanya untuk atas-bawah)*/
+}
+
+img.p10{
+	width: 170px;
+	float: right;
+}
+
+img.p11{
+	width: 170px;
+	float: left;
+}
+
+img.p12{
+	width: 170px;
+	float: none;
+}
+
+div.p13{
+	float: left;
+	border: 1px solid green;
+}
+
+div.p14{
+	clear: left;
+	border: 1px solid green;
+}
+
+.clearfix{
+	border: 1px solid green;
+	overflow: auto;
+}
+
+.box{
+	float: left;
+	width: 33.3%;
+	padding: 50px;
+}
+
+.clearfix::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/*div{
+	padding: 15px;
+	float: left;
+}
+
+div.float1{
+	background-color: red;
+}
+
+div.float2{
+	background-color: yellow;
+}
+
+div.float3{
+	background-color: green;
+}*/
