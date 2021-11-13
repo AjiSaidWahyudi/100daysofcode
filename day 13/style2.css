@@ -1,0 +1,39 @@
+/*Descendant Selector = selector yang merupakan turunan dari elemen tertentu
+div p{
+	background-color: yellow;
+}
+p merupakan turunan dari div*/
+
+/*Child Selector = selector yang mengambil salah satu turunan dari elemen tertentu
+div > p{
+	background-color: yellow;
+} hanya p yang diambil, meskipun di dalamnya ada elemen lain*/
+
+/*Adjacent Sibling Selector = dua anak berdekatan yang memiliki parent sama
+div + p{
+	background-color: yellow;
+} maka yang dapat background kuning adalah elemen p setelah div + p*/
+
+/*General Sibling Selector = sama seperti Adjacent Sibling Selector, tapi tidak harus berdekatan
+div ~ p{
+	background-color: yellow;
+}*/
+
+p{
+	display: none;
+	background-color: yellow;
+	padding: 20px;
+}
+
+div:hover p{
+	display: block;
+}
+
+::marker{
+	color: orange;
+}
+
+::selection{
+	color: blue;
+	background-color: yellow;
+}

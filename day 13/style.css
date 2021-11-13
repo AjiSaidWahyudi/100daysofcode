@@ -1,0 +1,129 @@
+span.a{
+	display: inline;
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	border: 1px solid blue;
+	background-color: yellow;
+}
+
+span.b {
+  	display: inline-block;
+  	width: 200px;
+  	height: 100px;
+  	padding: 5px;
+  	border: 1px solid blue;    
+  	background-color: yellow; 
+}
+
+span.c{
+	display: block;
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	border: 1px solid blue;
+	background-color: yellow;
+}
+
+.nav{
+	background-color: yellow;
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.nav li{
+	display: inline-block;
+	font-size: 20px;
+	padding: 20px;
+}
+
+.center1{
+	margin: auto; /*membuat elemen ke tengah*/
+	width: 60px;
+	border: 3px solid #73AD21;
+	padding: 10px;
+}
+
+.center2{
+	/*padding: 10px;*/
+	text-align: center; /*membuat teks ke tengah*/
+	border: 3px solid #73AD21;
+	line-height: 200px; /*jika menggunakan line height, nominalnya samakan dengan height*/
+	height: 200px;
+}
+
+.center2 p{
+	line-height: 1.5;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+img.center3{
+	margin-left: auto; /*membuat gambar ke tengah*/
+	margin-right: auto;
+	display: block;
+	opacity: .5;
+}
+
+img:hover{
+	opacity: 1.0;
+}
+
+.center4{
+	border: 3px solid #73AD21;
+	height: 200px;
+	position: relative;
+}
+
+.center4 p{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.center5{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	border: 3px solid green;
+}
+
+a:link{
+	color: red;
+}
+
+a:visited{
+	color: purple;
+}
+
+a.highlight:hover{
+	color: green;
+	font-size: 22px;
+} /*hover harus ditaruh setelah link & visited*/
+
+a:active{
+	color: orange;
+} /*active harus ditaruh setelah hover*/
+
+/*p:first-child{
+	color: blue;
+}*/
+
+p::first-letter{
+	color: #ff0000;
+	font-variant: small-caps;
+}
+
+p::first-line{
+	color: #0000ff;
+	font-variant: small-caps;
+}
+
+p::before{
+	content: "--";
+}
