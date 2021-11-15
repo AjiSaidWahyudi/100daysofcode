@@ -1,0 +1,166 @@
+#rounded1{
+	border-radius: 25px 15px 10px 5px; /*(first value applies to top-left corner, second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner)*/
+	background: #73AD21;
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+	color: blue;
+	border: 10px solid currentColor;
+}
+
+#rounded2{
+	border-radius: 25px 20px 15px; /*(first value applies to top-left corner, second value applies to top-right and bottom-left corners, and third value applies to bottom-right corner)*/
+	border: 2px solid #73AD21;
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+}
+
+#rounded3{
+	border-radius: 25px 15px; /*(first value applies to top-left and bottom-right corners, and the second value applies to top-right and bottom-left corners)*/
+	background: url(gambar.jpg);
+	background-position: left top;
+	background-repeat: repeat;
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+}
+
+#rounded4{
+	border-radius: 25px;
+	/*background-image: linear-gradient(45deg, green, red, yellow);*/ /*jika ingin transparan, gunakan rgba*/
+	background-image: repeating-linear-gradient(45deg, green, red 10%, yellow 20%);
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+}
+
+#rounded5{
+	border-radius: 25px / 50px;
+	background-image: radial-gradient(circle, red 5%, yellow 15%, green 60%);
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+}
+
+#rounded6{
+	border-radius: 50px / 25px;
+	background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg);
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+}
+
+#rounded7{
+	border-radius: 50%;
+	background: #73AD21;
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+}
+
+#roundedimg1{
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(border.png) 30 round;
+}
+
+#roundedimg2{
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(border.png) 30 stretch;
+}
+
+#roundedimg3{
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(border.png) 50 round;
+}
+
+#roundedimg4{
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(border.png) 20% round;
+}
+
+#roundedimg5{
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image: url(border.png) 30% round;
+}
+
+#background1{
+	border: 3px solid black;
+	background: url(orange2.png) right bottom no-repeat, url(orange.jpg) left top repeat;
+	background-size: contain, cover;
+	/*background-origin: border-box;*/
+	background-origin: content-box;
+	padding: 115px;
+}
+
+#clip{
+	border: 10px dotted black;
+	padding: 35px;
+	background: yellow;
+	/*background-clip: padding-box;*/
+	background-clip: content-box;
+}
+
+#coba-inherit{
+	border: 2px dotted blue;
+}
+
+#coba-inherit span{
+	border: inherit;
+}
+
+#grad{
+	height: 150px;
+	width: 150px;
+	background-color: red;
+	/*background-image: radial-gradient(closest-side at 70% 65%, red, yellow, black);*/
+	/*background-image: radial-gradient(farthest-side at 50% 65%, red, yellow, black);*/
+	/*background-image: radial-gradient(closest-corner at 50% 65%, red, yellow, black);*/
+	/*background-image: radial-gradient(farthest-corner at 40% 65%, red, yellow, black);*/
+	/*background-image: conic-gradient(from 45deg, red, yellow, green);*/
+	background-image: conic-gradient(at 60% 45%, red, yellow, green);
+}
+
+h1{
+	color: white;
+	/*text-shadow: 0 0 5px red, 0 0 5px blue;*/
+	text-shadow: 1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#boxshadow{
+	width: 300px;
+	height: 100px;
+	padding: 15px;
+	background-color: yellow;
+	/*box-shadow: 10px 10px 5px 12px grey;*/ /*urutan: posisi, blur, spread, warna*/
+	/*box-shadow: 10px 10px 5px grey inset;*/
+	box-shadow: 5px 5px 8px blue, 10px 10px 8px red;
+}
+
+div.card{
+	width: 250px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+	text-align: center;
+}
+
+div.polaroid{
+	width: 250px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+	text-align: center;
+}
+
+div.header{
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px;
+	font-size: 40px;
+}
+
+div.container{
+	padding: 10px;
+}
