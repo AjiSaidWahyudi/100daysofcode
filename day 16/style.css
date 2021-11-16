@@ -1,0 +1,78 @@
+@font-face{
+	font-family: DM_Sans;
+	src: url(DMSans-Regular.ttf);
+	/*font-weight: italic;*/
+}
+
+p{
+	font-family: DM_Sans;
+}
+
+p.tes1{
+	white-space: nowrap;
+	width: 200px;
+	border: 1px solid #000;
+	overflow: hidden;
+	text-overflow: clip;
+}
+
+p.tes2{
+	white-space: nowrap;
+	width: 200px;
+	border: 1px solid #000;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+p.tes3{
+	width: 11rem;
+	border: 1px solid #000;
+	word-wrap: break-word;
+}
+
+p.tes4{
+	width: 140px;
+	border: 1px solid #000;
+	word-break: keep-all;
+}
+
+p.tes5{
+	width: 140px;
+	border: 1px solid #000;
+	word-break: break-all;
+}
+
+p.tes6{
+	writing-mode: vertical-rl;
+}
+
+/*p:hover{
+	overflow: visible;
+}*/
+
+div{
+	width: 300px;
+	height: 100px;
+	background: yellow;
+	transition: width 2s, height 2s, transform 2s;
+	transition-timing-function: ease-in-out; /*ease/linear/ease-in/ease-out/ease-in-out*/
+	transition-delay: 1s;
+	/*transition: width 2s linear 1s; shorthand*/
+}
+
+div.coba-transform{
+	transform: translate(50px, 100px); memindahkan elemen ke posisi tertentu
+	/*transform: rotate(30deg); memutar elemen*/
+	/*transform: scale(2,3); menambah/mengurangi ukuran elemen*/
+	/*transform: scaleY(0.5); scale x/y: menambah/mengurangi ukuran secara horizontal/vertikal*/
+	/*transform: skewY(10deg); skew x/y: memiringkan elemen secara horizontal/vertikal*/
+	/*transform: skew(20deg, 30deg);*/
+	/*transform: matrix(1, -0.3, 0, 1, 0, 0); matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+	/*transform: rotateZ(135deg); memutar elemen (x = horizontal, y = vertikal, z = memutar searah/berlawanan jarum jam)*/
+}
+
+div:hover{
+	width: 400px;
+	height: 400px;
+	transform: rotate(180deg);
+}
