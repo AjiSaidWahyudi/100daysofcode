@@ -1,0 +1,258 @@
+.tooltip{
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+}
+
+/*panah ke bawah*/
+.tooltip .tooltiptext1{
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.tooltip .tooltiptext1::after{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext1{
+	visibility: visible;
+	opacity: 1;
+}
+
+/*panah ke atas*/
+.tooltip .tooltiptext2{
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	top: 150%;
+	left: 50%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.tooltip .tooltiptext2::after{
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext2{
+	visibility: visible;
+	opacity: 1;
+}
+
+/*panah ke kiri*/
+.tooltip .tooltiptext3{
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	top: -5px;
+	left: 110%;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.tooltip .tooltiptext3::after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 100%;
+	margin-top: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent black transparent transparent;
+}
+
+.tooltip:hover .tooltiptext3{
+	visibility: visible;
+	opacity: 1;
+}
+
+/*panah ke kanan*/
+.tooltip .tooltiptext4{
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	top: -5px;
+	right: 110%;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.tooltip .tooltiptext4::after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	margin-top: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent transparent black;
+}
+
+.tooltip:hover .tooltiptext4{
+	visibility: visible;
+	opacity: 1;
+}
+
+.coba-teks{
+	position: relative;
+}
+
+img.gambar2{
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 5px;
+	opacity: .5;
+	max-width: 100%;
+	height: auto;
+	/*border-radius: 50%; bulat*/
+}
+
+img:hover{
+	/*transform: scaleX(-1);*/
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, .5);
+}
+
+.coba-teks .top-left{
+	position: absolute;
+	top: 8px;
+	left: 16px;
+	font-size: 18px;
+}
+
+.coba-teks .top-right{
+	position: absolute;
+	top: 8px;
+	right: 16px;
+	font-size: 18px;
+}
+
+.coba-teks .bottom-left{
+	position: absolute;
+	bottom: 8px;
+	left: 16px;
+	font-size: 18px;
+}
+
+.coba-teks .bottom-right{
+	position: absolute;
+	bottom: 8px;
+	right: 16px;
+	font-size: 18px;
+}
+
+.coba-teks .centered{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 18px;
+}
+
+img.gambar3{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.polaroid{
+	margin: 25px;
+	width: 80%;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+}
+
+div.container{
+	text-align: center;
+	padding: 10px 20px;
+}
+
+/*div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
