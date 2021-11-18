@@ -1,0 +1,326 @@
+ul.breadcrumb{
+	padding: 8px 16px;
+	list-style: none;
+	background-color: #eee;
+}
+
+ul.breadcrumb li{
+	display: inline;
+}
+
+ul.breadcrumb li+li:before{
+	padding: 8px;
+	color: black;
+	content: "/\00a0";
+}
+
+ul.breadcrumb li a{
+	color: green;
+}
+
+img.coba1{
+	-webkit-box-reflect: right 20px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .4)); /*below/above/left/right*/
+}
+
+img.coba2{
+	width: 200px;
+	height: 300px;
+	object-fit: cover; /*Konten yang diganti berukuran untuk mempertahankan rasio aspeknya sambil mengisi seluruh kotak konten elemen. Objek akan dipotong agar sesuai*/
+	/*object-fit: contain; Konten yang diganti diskalakan untuk mempertahankan rasio aspeknya sementara didalam kotak konten elemen*/
+	/*object-fit: fill; Ini standar. Konten yang diganti akan berukuran untuk mengisi kotak konten elemen. Jika perlu, objek akan diregangkan atau ditekan agar sesuai*/
+	/*object-fit: none; Konten yang diganti tidak diubah ukurannya*/
+	/*object-fit: scale-down; Konten berukuran seolah-olah tidak ada*/
+	object-position: 15% 100%; /*urutan: horizontal vertikal*/
+}
+
+.button{
+	background-color: white;
+	border: 2px solid yellow;
+	border-radius: 4px;
+	color: black;
+	width: 20%;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	transition-duration: .4s;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+}
+
+.button:hover{
+	background-color: yellow;
+	color: black;
+}
+
+.button-disabled{
+	background-color: white;
+	border: 2px solid yellow;
+	border-radius: 4px;
+	color: black;
+	width: 20%;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	transition-duration: .4s;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+	opacity: .2;
+	cursor: not-allowed;
+}
+
+.btn-group .button-group{
+	background-color: purple;
+	border: 1px solid blue;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block; /*horizontal*/
+	/*display: block; vertical*/
+	font-size: 16px;
+	cursor: pointer;
+	float: left;
+}
+
+.btn-group .button-group:hover{
+	background-color: blue;
+}
+
+.container{
+	position: relative;
+	width: 100%;
+	max-width: 400px;
+}
+
+.container img{
+	width: 100%;
+	height: auto;
+}
+
+.container .btn{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: #f1f1f1;
+	color: black;
+	font-size: 16px;
+	padding: 16px 30px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.container .btn:hover{
+	background-color: black;
+	color: white;
+}
+
+.animated-btn{
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #f4511e;
+	border: none;
+	color: #fff;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all .5s;
+	cursor: pointer;
+	margin: 5px;
+}
+
+.animated-btn span{
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: .5s;
+}
+
+.animated-btn span:after{
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: .5s;
+}
+
+.animated-btn:hover span{
+	padding-right: 25px;
+}
+
+.animated-btn:hover span:after{
+	opacity: 1;
+	right: 0;
+}
+
+.clicked-btn{
+	display: inline-block;
+	padding: 15px 25px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+}
+
+.clicked-btn:hover{
+	background-color: #3e8e41;
+}
+
+.clicked-btn:active{
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.fadein-btn{
+	background-color: #f4511e;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	opacity: .6;
+	transition: .3s;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.fadein-btn:hover{
+	opacity: 1;
+}
+
+.ripple-btn{
+	position: relative;
+	background-color: #4CAF50;
+	border: none;
+	font-size: 28px;
+	color: #fff;
+	padding: 20px;
+	width: 200px;
+	text-align: center;
+	transition-duration: .4s;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.ripple-btn:after{
+	content: "";
+	background: #f1f1f1;
+	display: block;
+	position: absolute;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px!important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: all .8s;
+}
+
+.ripple-btn:active:after{
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s;
+}
+
+.center{
+	text-align: center;
+}
+
+.pagination{
+	display: inline-block;
+}
+
+.pagination a{
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	border: 1px solid #ddd;
+	/*border-radius: 5px;*/
+	transition: background-color .3s;
+	margin: 0 4px;
+	font-size: 22px;
+}
+
+.pagination a.active{
+	background-color: #4CAF50;
+	color: white;
+	/*border-radius: 5px;*/
+}
+
+.pagination a:hover:not(.active){
+	background-color: #ddd;
+}
+
+.pagination a:first-child{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child{
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.newspaper{
+	column-count: 3;
+	column-width: 500px;
+	column-gap: 40px;
+	/*column-rule-style: solid;
+	column-rule-width: 1px;
+	column-rule-color: green;*/
+	column-rule: 1px solid green;
+}
+
+.newspaper h2{
+	column-span: all;
+}
+
+.coba-resize{
+	border: 2px solid blue;
+	padding: 20px;
+	width: 300px;
+	resize: both; /*horizontal/vertical/both*/
+	overflow: auto;
+}
+
+/*
+menghilangkan resize pada textarea
+textarea {
+  resize: none;
+}*/
+
+div.coba-outline1{
+	margin: 20px;
+	border: 1px solid black;
+	outline: 4px solid red;
+	outline-offset: 15px;
+}
+
+div.coba-outline2{
+	margin: 10px;
+	border: 1px solid black;
+	outline: 5px dashed blue;
+	outline-offset: 5px;
+}
