@@ -1,0 +1,89 @@
+/*var() = menampilkan value dalam bentuk variabel, biasanya digunakan untuk menentukan warna*/
+:root{
+	--red: #c92014;
+	--green: #17b336;
+}
+
+.container{
+	--fontsize: 25px;
+}
+
+h1{
+	color: var(--red);
+}
+
+p{
+	/*--lightgreen: #00ff33;*/ /*jika ingin menggunakan warna yang lain dari variabel tersebut*/
+	color: var(--green);
+}
+
+.container{
+	font-size: var(--fontsize);
+}
+
+.kotak{
+	width: 300px;
+	height: 100px;
+	padding: 10px;
+	border: 1px solid black;
+	box-sizing: border-box; /*agar sesuai dengan ukuran width & height yang ditetapkan*/
+}
+
+.flex-container{
+	display: flex;
+	/*flex-direction: row; column/column-reverse/row/row-reverse*/
+	flex-wrap: wrap; /*wrap/nowrap/wrap-reverse*/
+	/*flex-flow: row wrap; shorthand*/
+	/*justify-content: space-between; center/flex-start/flex-end/space-around/space-between*/
+	align-items: stretch; /*center/flex-start/flex-end/stretch/baseline*/
+	/*align-content: flex-end; stretch/center/flex-start/flex-end/space-around/space-between*/
+	height: 600px;
+	background-color: dodgerblue;
+} /*jika ingin perfect center, justify-content & justify-content harus center*/
+
+.flex-container > div{
+	background-color: #f1f1f1;
+	width: 100px;
+	margin: 10px;
+	text-align: center;
+	font-size: 30px;
+	line-height: 75px;
+
+}
+
+@media screen and (max-width: 900px){
+	.container{
+		--fontsize: 15px;
+	}
+
+	:root{
+		--green: #14912d;
+	}
+
+	.flex-container{
+		flex-direction: column;
+	}
+}
+
+/*@media screen and (max-width: 900px) = jika panjang halaman di bawah max-width yang ditentukan, maka properti berubah
+@media screen and (min-width: 900px) = jika panjang halaman di atas min-width yang ditentukan, maka properti berubah
+@media only screen and (orientation: landscape/portrait) = jika posisi halaman berubah, maka properti berubah*/
+
+/*.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item-left {
+  flex: 50%;
+}
+
+.flex-item-right {
+  flex: 50%;
+}
+ 
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}*/
