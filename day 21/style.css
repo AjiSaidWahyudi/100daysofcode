@@ -1,0 +1,58 @@
+.grid-container{
+	display: grid; /*grid/inline-grid*/
+	height: 400px;
+	align-content: space-evenly;
+	justify-content: center;
+	grid-gap: 20px; /*grid-column-gap/grid-row-gap/grid-gap(urutan: row-column)*/
+	/*grid-template-columns: auto auto auto auto auto; jumlah kolom yang dibutuhkan, bisa pakai width atau auto*/
+	/*grid-template-rows: auto auto auto;*/
+	grid-template-areas: 'myArea myArea . . .' 'myArea myArea . . .';
+	background-color: #2196F3;
+	padding: 10px;
+}
+
+.grid-item{
+	background-color: rgba(255, 255, 255, .8);
+	border: 1px solid rgba(0, 0, 0, .8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.item1{
+	/*grid-column-start: 1;
+  	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	grid-row: 1/3;
+	grid-area: 1 / 1 / 3 / 4; baris-kolom-baris tujuan-kolom tujuan*/
+	grid-area: myArea; /*bisa custom nama*/
+}
+
+.item2{
+	/*grid-column: 1/3; diawali di kolom 1 dan berakhir sebelum kolom 3*/
+	/*grid-column: 2/span 4; diawali di kolom 1 dan berakhir pada kolom 3*/
+}
+
+/*---------*/
+
+.item-1{grid-area: header;}
+.item-2{grid-area: menu;}
+.item-3{grid-area: main;}
+.item-4{grid-area: right;}
+.item-5{grid-area: footer;}
+
+.container2{
+	display: grid;
+	grid-template-areas: 'header header header header header header' 'menu main main main right right' 'menu footer footer footer footer footer';
+	grid-gap: 10px;
+	background-color: #2196F3;
+	padding: 10px;
+}
+
+.container2 > div{
+	background-color: rgba(255, 255, 255, .8);
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+}
