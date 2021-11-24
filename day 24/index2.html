@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>100 Days of Code</title>
+</head>
+<body>
+	<button onclick="cobaReplace()">Klik</button>
+	<p id="coba1">Aji, Alfi, Arif</p>
+	<button onclick="cobaUppercase()">Klik</button>
+	<p id="coba2">ihsan, rizky, adit</p>
+	<button onclick="cobaLowercase()">Klik</button>
+	<p id="coba3">BUDI, ALI, RUDY</p>
+	<p id="coba4"></p>
+	<button onclick="cobaTrim()">Klik</button>
+	<p id="coba5"></p>
+	<p id="coba6"></p>
+	<p id="coba7"></p>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		/*function cobaReplace(){
+			let text = document.getElementById("coba1").innerHTML;
+	  		document.getElementById("coba1").innerHTML = text.replace("Alfi, Arif","Aulia, Sarman");
+		}*/
+		//karena method replace case sensitive, gunakan /.../i jika ingin tetap eksekusi replace terlepas dari huruf besar/kecilnya
+		//gunakan /.../g untuk mengganti kata yang memiliki lebih dari satu kata
+		/*function cobaUppercase(){
+			let text = document.getElementById("coba2").innerHTML;
+	  		document.getElementById("coba2").innerHTML = text.toUpperCase();
+		}
+		function cobaLowercase(){
+			let text = document.getElementById("coba3").innerHTML;
+	  		document.getElementById("coba3").innerHTML = text.toLowerCase();
+		}*/
+		let nama1 = "Aji Said";
+		let nama2 = "Wahyudi Hidayat";
+		let namalengkap = nama1.concat(" ",nama2);
+		//boleh dengan text = "Hello".concat(" ", "World!");
+		document.getElementById("coba4").innerHTML = namalengkap;
+		/*function cobaTrim(){
+			let text = "	Aji Said	";
+	  		alert(text.trim());
+		}*/
+		let nomor = "5";
+		document.getElementById("coba5").innerHTML = nomor.padStart(4,0); //padStart/padEnd (penambahan padding di awal/akhir string)
+		let tulisan = "Aji";
+		//document.getElementById("coba6").innerHTML = tulisan.charAt(1); yang ditampilkan karakternya
+		//document.getElementById("coba6").innerHTML = tulisan.charCodeAt(1); yang ditampilkan unicode
+		document.getElementById("coba6").innerHTML = tulisan[0]; //Property access might be a little unpredictable
+		let huruf = "a,b,c,d,e,f";
+		const myArray = huruf.split(",");
+		document.getElementById("coba7").innerHTML = myArray[1];
+		let text = "Hello";
+		const myArr = text.split("");
+
+		text = "";
+		for (let i = 0; i < myArr.length; i++) {
+		  text += myArr[i] + "<br>"
+		}
+		document.getElementById("demo").innerHTML = text;
+	</script>
+</body>
+</html>
