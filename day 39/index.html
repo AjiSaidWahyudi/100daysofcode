@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>100 Days of Code</title>
+</head>
+<body>
+	<p id="cobaLocationHref"></p>
+	<p id="cobaLocationHostname"></p>
+	<p id="cobaPath"></p>
+	<p id="cobaProtocol"></p>
+	<p id="cobaPort"></p>
+	<input type="button" value="Klik" onclick="newDoc()">
+	<input type="button" value="Back" onclick="goBack()">
+	<input type="button" value="Forward" onclick="goForward()">
+	<p id="cobaCookie"></p>
+	<p id="cobaAppName"></p>
+	<p id="cobaCode"></p>
+	<p id="cobaProduct"></p>
+	<p id="cobaVersion"></p>
+	<p id="cobaAgent"></p>
+	<p id="cobaPlatform"></p>
+	<p id="cobaLanguage"></p>
+	<p id="cobaOnline"></p>
+	<p id="cobaJavaEnabled"></p>
+	<button type="button" onclick="cobaAlert()">Klik</button>
+	<br>
+	<button type="button" onclick="cobaConfirm()">Klik</button>
+	<p id="munculkanConfirm"></p>
+	<button type="button" onclick="cobaPrompt()">Klik</button>
+	<p id="munculkanPrompt"></p>
+	<!-- <button onclick="setTimeout(cobaTiming, 3000);">Try it</button>
+	<br>
+	<button onclick="myVar = setTimeout(cobaTiming, 3000)">Try it</button>
+	<button onclick="clearTimeout(myVar)">Stop it</button> -->
+	<br>
+	<!-- <p id="cobaInterval"></p>
+	<button onclick="clearInterval(myVar2)">Stop time</button> -->
+	<br>
+	<button onclick="getLocation()">Try It</button>
+	<p id="cobaLokasi"></p>
+	<!-- <input id="id1" type="number" min="100" max="300" required>
+	<button onclick="cobaFormApi()">OK</button>
+	<p id="tampilkanValidasi"></p> -->
+	<input id="id1" type="number" min="100">
+	<button onclick="cobaFormApi()">OK</button>
+	<p id="tampilkanValidasi"></p>
+	<p id="cobaStorageApi"></p>
+	<br>
+	<p>Count numbers: <output id="result"></output></p>
+	<button onclick="startWorker()">Start Worker</button> 
+	<button onclick="stopWorker()">Stop Worker</button>
+	<br>
+	<p id="cobaFetch">Fetch a file to change this text.</p>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
