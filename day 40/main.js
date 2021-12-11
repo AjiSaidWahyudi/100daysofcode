@@ -290,7 +290,6 @@ an object (JSON object) {"employee":{"name":"John", "age":30, "city":"New York"}
 an array {"employees":["John", "Anna", "Peter"]}
 a boolean {"sale":true}
 null {"middlename":null}*/
-
 /*tidak bisa dijadikan tipe data
 a function
 a date
