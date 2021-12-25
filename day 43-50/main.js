@@ -15,6 +15,7 @@ button.onclick = () =>{
 }
 
 var options = {
+  autoPlay: true,
   accessibility: true,
   prevNextButtons: true,
   pageDots: true,
