@@ -376,6 +376,226 @@ section .about-section{
 	transform: scale(1.5);
 }
 
+.pricing{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 20px;
+	background: #ddd;
+}
+
+.wrapper{
+	max-width: 1090px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: space-between;
+}
+
+.wrapper .table{
+	background: #fff;
+	width: calc(33% - 20px);
+	padding: 30px;
+	position: relative;
+}
+
+.table .price-section{
+	display: flex;
+	justify-content: center;
+}
+
+.price-section .price-area{
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	padding: 2px;
+}
+
+.price-area .inner-area{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	color: #fff;
+	line-height: 117px;
+	text-align: center;
+	position: relative;
+}
+
+.price-area .inner-area .text{
+	font-size: 25px;
+	font-weight: 400;
+	position: absolute;
+	top: -10px;
+	left: 7px;
+}
+
+.price-area .inner-area .price{
+	font-size: 45px;
+	font-weight: 700;
+	margin-left: 36px;
+}
+
+.table .package-name{
+	width: 100%;
+	height: 2px;
+	background: #ffecb3;
+	margin: 35px 0;
+	position: relative;
+}
+
+.table .package-name::before{
+	position: absolute;
+	content: "Basic";
+	left: 50%;
+	top: 50%;
+	background: #fff;
+	font-size: 25px;
+	font-weight: 700;
+	padding: 0 15px;
+	transform: translate(-50%, -50%);
+}
+
+.basic .package-name::before{
+	content: "Basic";
+}
+
+.premium .package-name::before{
+	content: "Premium";
+}
+
+.ultimate .package-name::before{
+	content: "Ultimate";
+}
+
+.table .features li{
+	margin-bottom: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.features li .list-name{
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.features li .icon{
+	font-size: 15px;
+}
+
+.features li .icon.check{
+	color: #2db94d;
+}
+
+.features li .icon.cross{
+	color: #cd3241;
+}
+
+.table .btn-purchase{
+	display: flex;
+	justify-content: center;
+	margin-top: 35px;
+}
+
+.table .btn-purchase button{
+	width: 80%;
+	height: 50px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+	border: none;
+	outline: none;
+	border-radius: 25px;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+
+.table .btn-purchase button:hover{
+	border-radius: 5px;
+}
+
+.table ::selection{
+	color: #fff;
+}
+
+.basic ::selection,
+.basic .price-area,
+.basic .inner-area{
+	background: #ffd861;
+}
+
+.basic .btn-purchase button{
+	background: #fff;
+	color: #ffd861;
+	border: 2px solid #ffd861;
+}
+
+.basic .btn-purchase button:hover{
+	background: #ffd861;
+	color: #fff;
+}
+
+.premium ::selection,
+.premium .price-area,
+.premium .inner-area,
+.premium .btn-purchase button{
+	background: #a26bfa;
+}
+
+.ultimate ::selection,
+.ultimate .price-area,
+.ultimate .inner-area{
+	background: #43ef8b;
+}
+
+.ultimate .btn-purchase button{
+	background: #fff;
+	color: #43ef8b;
+	border: 2px solid #43ef8b;
+}
+
+.ultimate .btn-purchase button:hover{
+	background: #43ef8b;
+	color: #fff;
+}
+
+.basic .package-name{
+	background: #ffd861;
+}
+
+.premium .package-name{
+	background: #a26bfa;
+}
+
+.ultimate .package-name{
+	background: #43ef8b;
+}
+
+.table .ribbon{
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+}
+
+.table .ribbon span{
+	position: absolute;
+	top: 30px;
+	right: 0;
+	transform: rotate(-45deg);
+	width: 200px;
+	background: #a26bf4;
+	padding: 10px 0;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .12);
+}
+
 @media (max-width: 1200px){
 	.inner-container{
 		padding: 80px;
@@ -391,21 +611,16 @@ section .about-section{
 	.inner-container{
 		width: 100%;
 	}
+
+	.wrapper .table{
+		width: calc(50% - 20px);
+		margin-bottom: 40px;
+	}
 }
 
 @media (max-width: 800px){
 	.service{
 		width: 50%;
-	}
-}
-
-@media (max-width: 600px){
-	.about-section{
-		padding: 0;
-	}
-
-	.inner-container{
-		padding: 60px;
 	}
 }
 
@@ -491,5 +706,19 @@ section .about-section{
 
 	.person:hover{
 		flex: 2;
+	}
+}
+
+@media (max-width: 600px){
+	.about-section{
+		padding: 0;
+	}
+
+	.inner-container{
+		padding: 60px;
+	}
+
+	.wrapper .table{
+		width: 100%;
 	}
 }
