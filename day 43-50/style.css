@@ -596,6 +596,126 @@ section .about-section{
 	box-shadow: 0 5px 10px rgba(0, 0, 0, .12);
 }
 
+.card-header img{
+	max-width: 100%;
+	display: block;
+	object-fit: cover;
+	height: auto;
+}
+
+.blogs .container{
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 4rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.blogs .card{
+	width: 500px;
+	position: relative;
+	overflow: hidden;
+	border-radius: .6rem;
+	margin: 0 5px;
+}
+
+.blogs .card-header{
+	position: relative;
+	height: 35rem;
+	overflow: hidden;
+	padding: 3rem;
+}
+
+.blogs .card-header::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .6));
+	z-index: 2;
+}
+
+.blog-details{
+	position: relative;
+	z-index: 5;
+	color: #fff;
+}
+
+h2 .blog-title{
+	font-size: 3rem;
+	line-height: 1.4;
+	margin-bottom: 2rem;
+}
+
+.blog-metas{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.blog-metas .meta{
+	font-size: 1rem;
+	margin-right: 2rem;
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.2rem;
+}
+
+.blog-metas .meta i{
+	margin-right: .6rem;
+}
+
+.blog-metas .meta:last-child{
+	margin-right: 0;
+}
+
+.blogs .card-image{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.card-body{
+	padding: 4rem;
+	background-color: #ddd;
+}
+
+.blog-category{
+	padding: .5rem;
+	border: .2rem solid #ff0000;
+	display: inline-block;
+	border-radius: .6rem;
+	color: #ff0000;
+}
+
+.blog-excerpt{
+	margin: 2rem 0;
+}
+
+.blog-excerpt p{
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+.button{
+	display: block;
+	padding: .5rem;
+	background-color: #ff0000;
+	color: #fff;
+	border-radius: .6rem;
+	text-align: center;
+	transition: background-color .3s ease-in-out;
+}
+
+.button:hover{
+	background-color: #fff000;
+}
+
 @media (max-width: 1200px){
 	.inner-container{
 		padding: 80px;
@@ -615,6 +735,44 @@ section .about-section{
 	.wrapper .table{
 		width: calc(50% - 20px);
 		margin-bottom: 40px;
+	}
+}
+
+@media (min-width: 900px){
+	.container{
+		max-width: 80%;
+	}
+
+	.card{
+		height: 35rem;
+	}
+
+	.card-header{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
+	.card-body{
+		position: absolute;
+		width: 100%;
+		left: 0;
+		z-index: 12;
+		bottom: -100%;
+		transition: bottom .3s ease-in-out;
+	}
+
+	.card:hover .card-body{
+		bottom: 0;
+	}
+
+	.blog-details{
+		transition: all .3s ease-in-out;
+	}
+
+	.card:hover .blog-details{
+		transform: translateY(-35rem);
 	}
 }
 
