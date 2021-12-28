@@ -3,6 +3,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	text-decoration: none;
+	list-style: none;
 	font-family: 'Rajdhani', sans-serif;
 }
 
@@ -603,6 +604,102 @@ section .about-section{
 	height: auto;
 }
 
+section .testimonials{
+	padding: 4rem 0;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	flex-direction: column;
+}
+
+.testimonials .heading{
+	font-size: 4em;
+	margin-bottom: 3rem;
+}
+
+.testimonials .container{
+	padding: 0 2rem;
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	flex-wrap: wrap;
+	overflow-x: hidden;
+}
+
+.testimonials .card{
+	width: 18rem;
+	backface-visibility: hidden;
+	cursor: pointer;
+}
+
+.testimonials .card-text-wrapper{
+	padding: 1rem 2rem;
+	background-color: #fff;
+	border-radius: 2px;
+	font-size: 1.4em;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, .2);
+	display: flex;
+	position: relative;
+	gap: 1rem;
+}
+
+.testimonials .card-text-wrapper::after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 2rem;
+	background-color: inherit;
+	width: 1rem;
+	height: 1rem;
+	transform: translateY(50%) rotate(45deg);
+}
+
+.testimonials .card-text-wrapper i{
+	font-size: 2rem;
+	transform: translateY(-5px);
+	color: #ff0000;
+}
+
+figure{
+	padding: 1rem;
+	display: flex;
+	gap: 1rem;
+}
+
+.card-user-pic{
+	height: 3rem;
+	width: 3rem;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, .2);
+}
+
+.card-user-pic img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.testimonials h1{
+	color: #fff;
+}
+
+.testimonials .card-name{
+	display: block;
+	font-size: 1em;
+	letter-spacing: 2px;
+	margin-bottom: 2px;
+	color: blue;
+}
+
+.testimonials .card-prof{
+	display: block;
+	font-size: .6em;
+	font-weight: 400;
+	color: blue;
+}
+
 .blogs .container{
 	max-width: 90%;
 	margin: 0 auto;
@@ -610,6 +707,7 @@ section .about-section{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background: #ccc;
 }
 
 .blogs .card{
@@ -716,6 +814,133 @@ h2 .blog-title{
 	background-color: #fff000;
 }
 
+footer{
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 50px 100px;
+	background: #111;
+}
+
+footer .container{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+footer .container .sec{
+	margin-right: 30px;
+}
+
+footer .container .sec.aboutus{
+	width: 40%;
+}
+
+footer .container h2{
+	position: relative;
+	color: #fff;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+footer .container h2:before{
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 50px;
+	height: 2px;
+	background: #f00;
+}
+
+footer .container .sec.aboutus p{
+	color: #999;
+}
+
+.sci{
+	margin-top: 20px;
+	display: flex;
+}
+
+.sci li a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: #222;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+	border-radius: 4px;
+}
+
+.sci li a:hover{
+	background: #f00;
+}
+
+.sci li a .fab{
+	color: #fff;
+	font-size: 20px;
+}
+
+.quickLinks{
+	position: relative;
+	width: 25%;
+}
+
+.quickLinks ul li a{
+	color: #999;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.quickLinks ul li a:hover{
+	color: #fff;
+}
+
+.contact{
+	width: calc(35% - 60px);
+	margin-right: 0!important;
+}
+
+.contact .info{
+	position: relative;
+}
+
+.contact .info li{
+	display: flex;
+	margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1){
+	color: #fff;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.contact .info li span,
+.contact .info li a{
+	color: #999;
+}
+
+.contact .info li a:hover{
+	color: #fff;
+}
+
+.copyrightText{
+	width: 100%;
+	background: #181818;
+	padding: 8px 100px;
+	color: #999;
+	text-align: center;
+}
+
 @media (max-width: 1200px){
 	.inner-container{
 		padding: 80px;
@@ -739,7 +964,7 @@ h2 .blog-title{
 }
 
 @media (min-width: 900px){
-	.container{
+	.blogs .container{
 		max-width: 80%;
 	}
 
@@ -779,6 +1004,34 @@ h2 .blog-title{
 @media (max-width: 800px){
 	.service{
 		width: 50%;
+	}
+
+	footer{
+		padding: 40px;
+	}
+
+	footer .container{
+		flex-direction: column;
+	}
+
+	footer .container .sec{
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+
+	footer .container .sec.aboutus,
+	.quickLinks,
+	.contact
+	{
+		width: 100%;
+	}
+
+	.copyrightText{
+		width: 100%;
+		background: #181818;
+		padding: 8px 40px;
+		color: #999;
+		text-align: center;
 	}
 }
 
