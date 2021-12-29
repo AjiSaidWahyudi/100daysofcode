@@ -8,8 +8,9 @@
 }
 
 nav{
+	background: linear-gradient(90deg, #08AEEA, #2AF598);
 	width: 100%;
-	height: 100px;
+	height: 80px;
 	display: flex;
 	justify-content: left;
 	font-size: 20px;
@@ -21,19 +22,20 @@ nav button{
 }
 
 nav .logo{
-	width: 30%;
+	padding: 0 100px;
 	text-align: center;
-	margin-top: 20px;
 }
 
-nav .logo h1{
-	color: purple;
+nav .logo img{
+	width: 100px;
+	margin-top: 20px;
+	line-height: 80px;
 }
 
 nav .menu{
 	width: 60%;
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
 nav .menu ul li{
@@ -47,11 +49,11 @@ nav .menu ul:nth-child(2) li{
 	position: relative;
 	top: -8px;
 	left: 140px;
-	color: #757575;
+	color: #fff;
 }
 
 nav .menu ul li a{
-	color: #757575;
+	color: #fff;
 }
 
 nav form{
@@ -64,7 +66,7 @@ nav form{
 nav form input{
 	width: 90%;
 	position: relative;
-	top: -45px;
+	top: -50px;
 	padding: 10px 0;
 	border: none;
 	outline: none;
@@ -96,9 +98,9 @@ nav form input.expand ~ .fa-times{
 nav form .fa{
 	position: absolute;
 	top: -40px;
-	right: 40px;
+	right: -40px;
 	cursor: pointer;
-	color: #757575;
+	color: #fff;
 }
 
 .fa-times{
@@ -139,7 +141,6 @@ nav form .fa{
 }
 
 .hero-slider .carousel-cell .inner .subtitle {
-	font-family: 'Roboto Slab', serif;
 	font-size: 2.2rem;
 	line-height: 1.2em;
 	font-weight: 200;
@@ -150,7 +151,6 @@ nav form .fa{
 }
 
 .hero-slider .carousel-cell .inner .title {
- 	font-family: 'Montserrat', sans-serif;
  	font-size: 3rem;
  	line-height: 1.2em;
  	text-transform: uppercase;
@@ -162,7 +162,6 @@ nav form .fa{
 	border: 1px solid #fff;
 	padding: 14px 18px;
 	text-transform: uppercase;
-	font-family: 'Montserrat', sans-serif;
 	font-size: 0.8rem;
 	letter-spacing: 3px;
 	color: #fff;
@@ -226,7 +225,7 @@ section .about-section{
 	width: 55%;
 	float: right;
 	background-color: #fdfdfd;
-	padding: 150px;
+	padding: 50px;
 }
 
 .inner-container h1{
@@ -236,7 +235,7 @@ section .about-section{
 }
 
 .inner-container p{
-	font-size: 13px;
+	font-size: 16px;
 	color: #545454;
 	line-height: 30px;
 	text-align: justify;
@@ -259,7 +258,7 @@ section .about-section{
 	display: inline-block;
 	text-transform: uppercase;
 	border-bottom: 4px solid #3498db;
-	font-size: 20px;
+	font-size: 2em;
 	padding-bottom: 10px;
 	margin-top: 40px;
 }
@@ -540,9 +539,19 @@ section .about-section{
 
 .premium ::selection,
 .premium .price-area,
-.premium .inner-area,
-.premium .btn-purchase button{
+.premium .inner-area{
 	background: #a26bfa;
+}
+
+.premium .btn-purchase button{
+	background: #fff;
+	color: #a26bfa;
+	border: 2px solid #a26bfa;
+}
+
+.premium .btn-purchase button:hover{
+	background: #a26bfa;
+	color: #fff;
 }
 
 .ultimate ::selection,
@@ -606,7 +615,7 @@ section .about-section{
 
 section .testimonials{
 	padding: 4rem 0;
-	min-height: 100vh;
+	min-height: 50vh;
 	display: flex;
 	justify-content: center;
 	align-self: center;
@@ -614,8 +623,10 @@ section .testimonials{
 }
 
 .testimonials .heading{
-	font-size: 4em;
+	font-size: 2.5em;
 	margin-bottom: 3rem;
+	text-align: center;
+	margin-top: 30px;
 }
 
 .testimonials .container{
@@ -642,6 +653,7 @@ section .testimonials{
 	display: flex;
 	position: relative;
 	gap: 1rem;
+	animation: slideLeft 1s cubic-bezier(.175, .885, .32, 1.275);
 }
 
 .testimonials .card-text-wrapper::after{
@@ -658,13 +670,14 @@ section .testimonials{
 .testimonials .card-text-wrapper i{
 	font-size: 2rem;
 	transform: translateY(-5px);
-	color: #ff0000;
+	color: #08AEEA;
 }
 
 figure{
 	padding: 1rem;
 	display: flex;
 	gap: 1rem;
+	animation: fadeIn 1s ease-in-out;
 }
 
 .card-user-pic{
@@ -690,14 +703,28 @@ figure{
 	font-size: 1em;
 	letter-spacing: 2px;
 	margin-bottom: 2px;
-	color: blue;
+	color: #08AEEA;
 }
 
 .testimonials .card-prof{
 	display: block;
 	font-size: .6em;
 	font-weight: 400;
-	color: blue;
+	color: #08AEEA;
+}
+
+@keyframes slideLeft{
+	0%{
+		opacity: 0;
+		transform: translateX(10rem) rotate(20deg);
+	}
+}
+
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+		transform: translateY(2rem);
+	}
 }
 
 .blogs .container{
@@ -785,10 +812,10 @@ h2 .blog-title{
 
 .blog-category{
 	padding: .5rem;
-	border: .2rem solid #ff0000;
+	border: .2rem solid #08AEEA;
 	display: inline-block;
 	border-radius: .6rem;
-	color: #ff0000;
+	color: #08AEEA;
 }
 
 .blog-excerpt{
@@ -803,7 +830,7 @@ h2 .blog-title{
 .button{
 	display: block;
 	padding: .5rem;
-	background-color: #ff0000;
+	background-color: #08AEEA;
 	color: #fff;
 	border-radius: .6rem;
 	text-align: center;
@@ -811,7 +838,7 @@ h2 .blog-title{
 }
 
 .button:hover{
-	background-color: #fff000;
+	background-color: #2AF598;
 }
 
 footer{
@@ -856,7 +883,7 @@ footer .container h2:before{
 	left: 0;
 	width: 50px;
 	height: 2px;
-	background: #f00;
+	background: #2AF598;
 }
 
 footer .container .sec.aboutus p{
@@ -881,7 +908,7 @@ footer .container .sec.aboutus p{
 }
 
 .sci li a:hover{
-	background: #f00;
+	background: #08AEEA;
 }
 
 .sci li a .fab{
@@ -965,7 +992,7 @@ footer .container .sec.aboutus p{
 
 @media (min-width: 900px){
 	.blogs .container{
-		max-width: 80%;
+		max-width: 100%;
 	}
 
 	.card{
