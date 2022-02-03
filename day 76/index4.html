@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>100 Days of Code</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("button").click(function() {
+				var txt = "";
+				txt += "Width of div: " + $("#div1").width()+"<br>";
+				txt += "Height of div: " + $("#div1").height()+"<br>";
+				txt += "Inner Width of div: " + $("#div1").innerWidth()+"<br>";
+				txt += "Inner Height of div: " + $("#div1").innerHeight()+"<br>";
+				txt += "Outer Width of div: " + $("#div1").outerWidth()+"<br>";
+				txt += "Outer Height of div: " + $("#div1").outerHeight()+"<br>";
+				txt += "Outer Width of div + margin: " + $("#div1").outerWidth(true)+"<br>";
+				txt += "Outer Height of div + margin: " + $("#div1").outerHeight(true)+"<br>";
+				//$("#div1").html(txt);
+				$("#div1").width(500).height(500);
+			});
+			/*$("button").click(function(){
+			    var txt = "";
+			    txt += "Document width/height: " + $(document).width();
+			    txt += "x" + $(document).height() + "\n";
+			    txt += "Window width/height: " + $(window).width();
+			    txt += "x" + $(window).height();
+			    alert(txt);
+			});*/
+		});
+	</script>
+	<style type="text/css">
+		#div1{
+			height: 200px;
+			width: 300px;
+			padding: 10px;
+			margin: 3px;
+			border: 1px solid blue;
+			background-color: lightblue;
+		}
+	</style>
+</head>
+<body>
+	<div id="div1"></div>
+	<button>Klik</button>
+	<!-- <button>Klik</button> -->
+</body>
+</html>

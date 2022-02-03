@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>100 Days of Code</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style type="text/css">
+		.ancestors *{
+			display: block;
+			border: 2px solid lightgrey;
+			color: lightgrey;
+			padding: 5px;
+			margin: 15px;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//$("span").parentsUntil("div").css({"color": "red", "border": "2px solid red"}); //parent, parents, parentsUntil
+			//$("div").find("*").css({"color": "red", "border": "2px solid red"}); //children, find
+			//$("p").prevUntil("li").css({"color": "red", "border": "2px solid red"}); //siblings, next, nextAll, nextUntil, prev, prevAll, prevUntil
+			$("p").not(".coba").css("background-color", "yellow"); //first, last, eq, filter, not
+		});
+	</script>
+</head>
+<body>
+	<!-- <div class="ancestors">
+		<div style="width: 500px;">div (great grand parent)
+			<ul>ul (grand parent)
+				<li>li (parent)
+					<span>span</span>
+				</li>
+				<li>li (parent)</li>
+				<p>p (parent)</p>
+				<p>p (parent)</p>
+				<h6>p (parent)</h6>
+			</ul>
+		</div>
+		<div style="width: 500px;">div (grand parent)
+			<p>p (parent)
+				<span>span</span>
+			</p>
+		</div>
+	</div> -->
+	<div style="border: 1px solid black;">
+		<p>Tulisan 1</p>
+		<p class="coba">Tulisan 2</p>
+	</div>
+	<br>
+	<div style="border: 1px solid black;">
+		<p>Tulisan 1</p>
+		<p>Tulisan 2</p>
+	</div>
+	<br>
+	<div style="border: 1px solid black;">
+		<p>Tulisan 1</p>
+		<p>Tulisan 2</p>
+	</div>
+</body>
+</html>

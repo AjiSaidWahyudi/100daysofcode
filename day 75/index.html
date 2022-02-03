@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>100 Days of Code</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#btn1").click(function() {
+				alert("Text: " + $("#tes").text());
+			});
+			$("#btn2").click(function() {
+				alert("HTML: " + $("#tes").html());
+			});
+			$("#btn3").click(function() {
+				alert("Value: " + $("#val").val());
+			});
+			$("#btn4").click(function() {
+				alert($("#link").attr("href"));
+			});
+			$("#btnset1").click(function() {
+				$("#cobaset1").text("Aji Said");
+			});
+			$("#btnset2").click(function() {
+				$("#cobaset2").html("<b>Wahyudi Hidayat</b>");
+			});
+			$("#btnset3").click(function() {
+				$("#cobaset3").val("S.Kom.");
+			});
+			$("#callback1").click(function() {
+				$("#cobacall1").text(function(i, origText) {
+					return "Old text: " + origText + " new text: Aji Said Wahyudi Hidayat (index: "+i+")";
+				});
+			});
+			$("#callback2").click(function() {
+				$("#cobacall2").html(function(i, origText) {
+					return "Old text: " + origText + "new html: <b>Aji Said</b> Wahyudi Hidayat (index: "+i+")";
+				});
+			});
+			$("#changehref").click(function() {
+				$("#link2").attr({"href": "https://weathernews.jp/web910/", "title": "Weathernews Schedule"});
+			});
+			$("#callback3").click(function() {
+				$("#linkcall").attr("href", function(i, origValue) {
+					return origValue + "wnl/caster/index.html";
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<p id="tes"><b>Tes</b> 123</p>
+	<button id="btn1">Show Text</button>
+	<button id="btn2">Show HTML</button>
+	<br>
+	<input type="text" id="val" value="Tes 123">
+	<button id="btn3">Show Value</button>
+	<p><a href="https://weathernews.jp/wnl/caster/index.html" id="link">Weathernews Casters</a></p>
+	<button id="btn4">Show Href Value</button>
+	<br>
+	<p id="cobaset1">Isi tulisan ini</p>
+	<p id="cobaset2">Isi tulisan ini</p>
+	<p>Isi tulisan ini <input type="text" id="cobaset3" value="Isi tulisan ini"></p>
+	<button id="btnset1">Set Text</button>
+	<button id="btnset2">Set HTML</button>
+	<button id="btnset3">Set Value</button>
+	<br>
+	<p id="cobacall1"><b>Isi</b> tulisan ini</p>
+	<p id="cobacall2"><b>Isi</b> tulisan ini</p>
+	<button id="callback1">Show Old/New Text</button>
+	<button id="callback2">Show Old/New HTML</button>
+	<p><a href="https://weathernews.jp/wnl/caster/index.html" id="link2">Weathernews Casters</a></p>
+	<button id="changehref">Change Href Value</button>
+	<p><a href="https://weathernews.jp/" id="linkcall">Weathernews Casters</a></p>
+	<button id="callback3">Change Href Value</button>
+</body>
+</html>

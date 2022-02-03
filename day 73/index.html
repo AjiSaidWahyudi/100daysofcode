@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>100 Days of Code</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//hide/show/toggle
+			$("#hide").click(function() {
+				$("p").hide(500);
+			});
+			$("#show").click(function() {
+				$("p").show();
+			});
+			$("#toggle").click(function() {
+				$("p").toggle(300);
+			});
+			//fade (fadeIn, fadeOut, fadeToggle, fadeTo)
+			/*$("button").click(function() {
+				$("#div1").fadeOut();
+    			$("#div2").fadeOut("slow");
+    			$("#div3").fadeOut(3000);
+				$("#div1").fadeTo("slow", .3);
+				$("#div2").fadeTo("slow", .4);
+				$("#div3").fadeTo("slow", .7);
+			});*/
+			//slide
+			$("#flip").click(function() {
+				$("#panel").slideUp();
+				//$("#panel").slideToggle();
+			});
+			//with callback
+			/*$("button").click(function(){
+				$("p").hide(function(){
+					alert("tes");
+				});
+			});*/
+			//without callback
+			$("button").click(function(){
+				$("p").hide();
+				alert("tes");
+			});
+		});
+	</script>
+	<style type="text/css">
+		#panel, #flip{
+			padding: 5px;
+			text-align: center;
+			background-color: #e5eecc;
+			border: solid 1px #c3c3c3;
+		}
+		#panel {
+			padding: 50px;
+			/*display: none;*/
+		}
+	</style>
+</head>
+<body>
+	<!-- <p>If you click on the "Hide" button, I will disappear.</p>
+	<button id="hide">Hide</button>
+	<button id="show">Show</button>
+	<button id="toggle">Toggle</button> -->
+	<!-- <button>Klik</button><br><br>
+	<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+	<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+	<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div> -->
+	<!-- <div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+	<div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+	<div id="div3" style="width:80px;height:80px;background-color:blue;"></div> -->
+	<button>Klik</button>
+	<p>tes</p>
+	<div id="flip">Click to slide down panel</div>
+	<div id="panel">Hello world!</div>
+</body>
+</html>
